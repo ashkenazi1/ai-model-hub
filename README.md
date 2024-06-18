@@ -18,4 +18,4 @@ go get github.com/ashkenazi1/ai-model-hub
 
 ## Usage
 
-pick
+look the the usage folder :)
