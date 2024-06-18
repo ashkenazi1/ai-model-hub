@@ -8,6 +8,11 @@ AI Model Hub is a Go package that provides a unified interface to interact with 
 - Easy to switch between different AI models.
 - Supports ChatGPT, Claude, and Gemini models.
 
+
+## Usage
+
+look the the usage folder :)
+
 ## Installation
 
 To install the package, use `go get`:
@@ -17,6 +22,3 @@ go get github.com/ashkenazi1/ai-model-hub
 
 ```
 
-## Usage
-
-look the the usage folder :)
