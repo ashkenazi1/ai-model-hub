@@ -15,6 +15,7 @@ To install the package, use `go get`:
 ```sh
 go get github.com/ashkenazi1/ai-model-hub
 
+```
 
 ## Usage
 
