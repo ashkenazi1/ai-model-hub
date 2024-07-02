@@ -7,7 +7,7 @@ func (c CluadeModel) Claude3Opus() string {
 }
 
 func (c CluadeModel) Claude3Sonnet() string {
-	return "claude-3-sonnet-20240229"
+	return "claude-3-5-sonnet-20240620"
 }
 
 func (c CluadeModel) Claude3Haiku() string {

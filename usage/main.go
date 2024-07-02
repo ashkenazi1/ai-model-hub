@@ -9,14 +9,14 @@ import (
 )
 
 func main() {
-	OpenAiKey := os.Getenv("API_KEY")
-	// ClaudeAPIKey := os.Getenv("API_KEY")
+	// OpenAiKey := os.Getenv("API_KEY")
+	ClaudeAPIKey := os.Getenv("API_KEY")
 	// Gemini_Api_Key := os.Getenv("API_KEY")
 
 	choosenAi := models.AiModel{}
-	choosenModel := models.ChatGptModel{}
+	choosenModel := models.CluadeModel{}
 
-	ai, err := ai.New(choosenAi.ChatGpt(), OpenAiKey, choosenModel.Gpt4o())
+	ai, err := ai.New(choosenAi.Claude(), ClaudeAPIKey, choosenModel.Claude3Sonnet(), "", true)
 	if err != nil {
 		panic(err)
 	}

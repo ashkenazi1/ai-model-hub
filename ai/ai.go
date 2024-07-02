@@ -13,16 +13,16 @@ type AiModel struct {
 	model models.Models
 }
 
-func New(modelName, apiKey, choosenModel string) (*AiModel, error) {
+func New(modelName, apiKey, choosenModel, systemPrompt string, useChatHistory bool) (*AiModel, error) {
 	var model models.Models
 
 	switch modelName {
 	case "claude":
-		model = claude.New(apiKey, choosenModel)
+		model = claude.New(apiKey, choosenModel, systemPrompt, useChatHistory)
 		return &AiModel{model: model}, nil
 
 	case "chatgpt":
-		model = chatgpt.New(apiKey, choosenModel)
+		model = chatgpt.New(apiKey, choosenModel, systemPrompt, useChatHistory)
 		return &AiModel{model: model}, nil
 
 	case "gemini":
