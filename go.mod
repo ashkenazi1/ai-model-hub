@@ -4,6 +4,7 @@ go 1.22.4
 
 require (
 	github.com/ashkenazi1/go_requester v0.0.0-20240618055202-c9af1642a55d
+	github.com/cohere-ai/cohere-go/v2 v2.10.0
 	github.com/google/generative-ai-go v0.14.0
 	github.com/sashabaranov/go-openai v1.25.0
 	google.golang.org/api v0.180.0
@@ -16,6 +17,8 @@ require (
 	cloud.google.com/go/auth/oauth2adapt v0.2.2 // indirect
 	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	cloud.google.com/go/longrunning v0.5.7 // indirect
+	github.com/aws/aws-sdk-go-v2 v1.30.3 // indirect
+	github.com/aws/smithy-go v1.20.3 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/go-logr/logr v1.4.1 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect

@@ -5,6 +5,7 @@ import (
 
 	"github.com/ashkenazi1/ai-model-hub/chatgpt"
 	"github.com/ashkenazi1/ai-model-hub/claude"
+	"github.com/ashkenazi1/ai-model-hub/cohere"
 	"github.com/ashkenazi1/ai-model-hub/gemini"
 	"github.com/ashkenazi1/ai-model-hub/models"
 )
@@ -30,6 +31,9 @@ func New(modelName, apiKey, choosenModel, systemPrompt string, useChatHistory bo
 		if err != nil {
 			return nil, err
 		}
+		return &AiModel{model: model}, nil
+	case "cohere":
+		model = cohere.New(apiKey, choosenModel, useChatHistory)
 		return &AiModel{model: model}, nil
 	}
 

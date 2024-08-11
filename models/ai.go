@@ -13,3 +13,7 @@ func (a AiModel) ChatGpt() string {
 func (a AiModel) Gemini() string {
 	return "gemini"
 }
+
+func (a AiModel) Cohere() string {
+	return "cohere"
+}
